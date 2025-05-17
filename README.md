@@ -10,7 +10,7 @@
 
 ## Table of contents
 
-1. [Descripiton](#description)
+1. [Description](#description)
 2. [How to run?](#how-to-run)
 3. [Screenshots](#screenshots)
 
@@ -31,12 +31,16 @@
 2. Clone the forked repository to your local machine.
 
 ```sh
-git clone https://github.com/<your-username>/Fullstack-Expense-Tracker
-```
+git clone https://github.com/LoopNFlight/Full-Stack-Expense-Tracker
+
+
 
 ### Step 2: Setting up e-mail and database configurations
 
-- Configure the following credentials in the [`application.properties`](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/blob/main/backend/src/main/resources/application.properties) file.
+- Configure the following credentials in the [`application.properties`](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/resources/application.properties) file.
+- Add some custom data manually in the [categories](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/Category.java#L13) table for both [type](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/TransactionType.java#L13) `expense` and `income`.
+- To start as admin, Insert a new user manually with role admin in [users](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/User.java#L20) table.
+
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/YOUR_DATABASE_NAME
@@ -50,13 +54,12 @@ spring.mail.password=YOUR_PASSWORD
 ### Step 3: Run the backend.
 
 - Run the backend application. It will automatically create the required tables. 
-- Add some custom data manually in the [categories](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/blob/7ecea71aaeca4e26a4aafd02fd602abe4d9da67d/backend/src/main/java/com/fullStack/expenseTracker/models/Category.java#L13) table for both [type](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/blob/7ecea71aaeca4e26a4aafd02fd602abe4d9da67d/backend/src/main/java/com/fullStack/expenseTracker/models/TransactionType.java#L13) `expense` and `income`.
-- To start as admin, Insert a new user manually with role admin in [`users`](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/blob/7ecea71aaeca4e26a4aafd02fd602abe4d9da67d/backend/src/main/java/com/fullStack/expenseTracker/models/User.java#L20) table.
+- Add some custom data manually in the [categories](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/7ecea71aaeca4e26a4aafd02fd602abe4d9da67d/backend/src/main/java/com/fullStack/expenseTracker/models/Category.java#L13) table for both [type](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/7ecea71aaeca4e26a4aafd02fd602abe4d9da67d/backend/src/main/java/com/fullStack/expenseTracker/models/TransactionType.java#L13) `expense` and `income`.
+- To start as admin, Insert a new user manually with role admin in [`users`](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/7ecea71aaeca4e26a4aafd02fd602abe4d9da67d/backend/src/main/java/com/fullStack/expenseTracker/models/User.java#L20) table.
 
 ### Step 4: Run the frontend
 
-1. Navigate to [frontend direcory](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/tree/main/frontend).
-```
+1.Navigate to [frontend direcory](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/tree/main/frontend).
 cd ./frontend
 ```
 
@@ -70,36 +73,31 @@ npm install
 npm start
 ```
 
-Access the application at [`http://localhost:3000/`](http://localhost:3000/).
+
+Access the application at [`http://localhost:3000/`](http://localhost:3000/).  
 To get started create a new account using your email.
 
 ## Screenshots
 
-![Screenshot 2024-04-18 091658](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/7637b70d-8b9f-485e-84f6-bce3c940f3f2)
-![Screenshot 2024-04-18 091720](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/f58e2e13-7db4-439a-b371-ce9b6e5838c7)
-![Screenshot 2024-04-18 091743](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/dbcfdbd2-d515-4197-b5ff-11ba0aed2dcf)
-![Screenshot 2024-04-18 091803](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/9d271a52-1444-4739-afe4-f51aa616d55e)
+![Welcome](https://github.com/user-attachments/assets/9ad0f9d5-6ea1-4bd9-a042-7bf787bb3b9f)
+![Login Page](https://github.com/user-attachments/assets/4c7346db-8928-4cfd-a3fb-f97e4d7fc740)
+![Register](https://github.com/user-attachments/assets/b7bbdff0-652b-4df8-9be7-a286057dd201)
+![Forgot Password](https://github.com/user-attachments/assets/bd82f9bd-0c52-474a-a727-8674bec73fe5)
 
-Users's stuff
+Users' stuff
 
-![Screenshot 2024-04-22 153501](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/a8e6d65b-626f-493e-922d-dd7c26d8294c)
-![Screenshot 2024-04-22 153536](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/ed01d05e-cead-43c5-8959-6b64615fee43)
-![Screenshot 2024-04-22 153556](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/40ab0b82-b38d-4a19-9044-d226e3f345ed)
-![Screenshot 2024-04-22 153622](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/8f8bef4e-6735-464f-a180-f2bc17633b1b)
-![Screenshot 2024-04-22 154204](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/994d23f0-e7c1-42a6-9571-44fd4353396e)
-![Screenshot 2024-04-22 154244](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/7e43cb13-6187-4af0-8900-66afef908f66)
-![Screenshot 2024-04-22 154301](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/1b308447-f5ef-4f26-826b-0e9f42e5914f)
-
-
+![Dashboard](https://github.com/user-attachments/assets/709c45d8-f423-4cdd-8ce5-f54964ad9b6a)
+![Transaction-History](https://github.com/user-attachments/assets/c3a2534c-b519-4926-9313-ae281923f2c9)
+![Edit-Transaction](https://github.com/user-attachments/assets/425eb2eb-fb23-4204-ae6a-a72b353e82bb)
+![New-Transaction](https://github.com/user-attachments/assets/f4ebe062-e00d-4870-9c2e-539b2c301418)
+![Statistics](https://github.com/user-attachments/assets/ccd417f0-2bf8-45e6-88f4-9324f2727f85)
+![Settings](https://github.com/user-attachments/assets/102d8580-c0fb-4d3b-8c1a-449b60b7d793)
 
 Admin's stuff
 
-![Screenshot 2024-04-18 092245](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/06454812-f542-4404-b9bf-e7d9b96b043d)
-![Screenshot 2024-04-18 092306](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/a024fadc-5f6a-4e3f-96f6-f38dd1f6b477)
-![Screenshot 2024-04-18 092325](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/5e93095e-f4be-4245-b3a4-8653cd9fea27)
-![Screenshot 2024-04-18 092342](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/5d40498e-ec3b-4559-ba15-efdf9c248d22)
-![Screenshot 2024-04-18 092805](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/aa94d2da-0080-421b-a191-d2ff9fb4472f)
-![Screenshot 2024-04-18 092822](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/assets/139672976/6cb49c2c-8317-4cec-ad16-b9496d97b16f)
-
-
-
+![Transactions](https://github.com/user-attachments/assets/8ae45300-5369-4abe-9c55-8904e97a0799)
+![Users](https://github.com/user-attachments/assets/6c25d5f2-121d-493d-a38a-2ef96ba074b7)
+![Category](https://github.com/user-attachments/assets/a5e89bd1-f437-4948-a54a-530dfd3c2b68)
+![Edit-Category](https://github.com/user-attachments/assets/e88eaf75-845a-4627-9ef4-425da9be7f2f)
+![New-Category](https://github.com/user-attachments/assets/f4db3aec-21ab-42ea-8a22-10ca00baefa5)
+![Settings](https://github.com/user-attachments/assets/ac855cda-9139-4eb6-842b-8d4ad3859f21)
