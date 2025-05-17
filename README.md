@@ -41,7 +41,7 @@ git clone https://github.com/LoopNFlight/Full-Stack-Expense-Tracker
 (https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/resources/application.properties) file.
 - Add some custom data manually in the [categories]
 (https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/Category.java#L13) table for both [type] `expense` and `income`.
-(https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/TransactionType.java#L13) 
+(https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/TransactionType.java#L13)
 - To start as admin, Insert a new user manually with role admin in [users]
 (https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/User.java#L20) table.
 
