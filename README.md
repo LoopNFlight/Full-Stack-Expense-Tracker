@@ -37,9 +37,13 @@ git clone https://github.com/LoopNFlight/Full-Stack-Expense-Tracker
 
 ### Step 2: Setting up e-mail and database configurations
 
-- Configure the following credentials in the [`application.properties`](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/resources/application.properties) file.
-- Add some custom data manually in the [categories](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/Category.java#L13) table for both [type](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/TransactionType.java#L13) `expense` and `income`.
-- To start as admin, Insert a new user manually with role admin in [users](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/User.java#L20) table.
+- Configure the following credentials in the [`application.properties`]
+(https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/resources/application.properties) file.
+- Add some custom data manually in the [categories]
+(https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/Category.java#L13) table for both [type] `expense` and `income`.
+(https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/TransactionType.java#L13) 
+- To start as admin, Insert a new user manually with role admin in [users]
+(https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/User.java#L20) table.
 
 
 ```properties
@@ -54,8 +58,21 @@ spring.mail.password=YOUR_PASSWORD
 ### Step 3: Run the backend.
 
 - Run the backend application. It will automatically create the required tables. 
-- Add some custom data manually in the [categories](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/7ecea71aaeca4e26a4aafd02fd602abe4d9da67d/backend/src/main/java/com/fullStack/expenseTracker/models/Category.java#L13) table for both [type](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/7ecea71aaeca4e26a4aafd02fd602abe4d9da67d/backend/src/main/java/com/fullStack/expenseTracker/models/TransactionType.java#L13) `expense` and `income`.
-- To start as admin, Insert a new user manually with role admin in [`users`](https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/7ecea71aaeca4e26a4aafd02fd602abe4d9da67d/backend/src/main/java/com/fullStack/expenseTracker/models/User.java#L20) table.
+- Add some custom data manually in
+[Category.java]
+(https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/Category.java#L13).
+
+-Table for both `expense` and `income` 
+[type]
+(https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/TransactionType.java#L13).
+
+- To start as admin, Insert a new user manually with role admin in
+[`users`]
+(https://github.com/LoopNFlight/Full-Stack-Expense-Tracker/blob/main/backend/src/main/java/com/fullStack/expenseTracker/models/User.java#L20) table.
+
+
+
+ 
 
 ### Step 4: Run the frontend
 
